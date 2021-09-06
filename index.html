@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<!--===============オープンエフェクト===============-->
+  <meta charset="utf-8">
+<title>4-2-5　背景色が伸びる（中央から外）　</title>
+<meta name="description"  content="書籍「動くWebデザインアイディア帳」のサンプルサイトです">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+<link rel="stylesheet" type="text/css"  href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-2-5/css/4-2-5.css">
+<!--===============メインサイト===============-->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +19,20 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <svg width="0" height="0" class="hidden">
-    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.47 24.94" id="arrow" class="arrow_svg">
-      <title>arrow</title>
-      <polygon points="0 24.94 0 19.66 7.35 12.47 0 5.92 0 0 12.47 12.47 0 24.94"/>
-    </symbol>
-  </svg>
-  <header class="header">
-    <div class="container">
-      <div class="header__logo"><img src="assets/images/logo.svg" alt="チームロゴ"></div>
-      <div class="header__name">N・S高生制作サイト</div>
-    </div>
-  </header>
-  <main class="main index-page">
-    <!-- タイトルエリア　ここから -->
+  <!--===============オープンエフェクト===============-->
+  <div id="splash">
+    <div id="splash-logo">読み込み中</div>
+    <!--/splash--></div>
+    <div class="splashbg1"></div>
+    <div class="splashbg2"></div>
+    <!---画面遷移用-->
+    
+      <div id="container">
+      <header id="header">
+      </header>
+        
+      <main class="main index-page">
+         <!-- タイトルエリア　ここから -->
     <h1 class="main-title"><img src="assets/images/top-image.png" alt="Presented by SCRAP×N・S高リアル脱出ゲーム制作PJ 封鎖された家庭科室からの脱出"></h1>
     <!-- タイトルエリア　ここまで -->
     <section class="section section--story">
@@ -119,7 +129,34 @@
         <a class="btn" href="main.html">準備OK？では、ゲームスタート！！！<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></a>
       </div>
     </section>
-  </main>
+      <!--/main--></main>
+    
+      <footer id="footer">
+      <small>&copy; copyright.</small>
+      </footer>
+        
+        <!--/contaier--></div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-2-5/js/4-2-5.js"></script>
+    <!--===============メインサイト===============-->
+  <svg width="0" height="0" class="hidden">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.47 24.94" id="arrow" class="arrow_svg">
+      <title>arrow</title>
+      <polygon points="0 24.94 0 19.66 7.35 12.47 0 5.92 0 0 12.47 12.47 0 24.94"/>
+    </symbol>
+  </svg>
+  <header class="header">
+    <div class="container">
+      <div class="header__logo"><img src="assets/images/logo.svg" alt="チームロゴ"></div>
+      <div class="header__name">N・S高生制作サイト</div>
+    </div>
+  </header>
+  <main class="main index-page">
+
+
+      </div>
+    </section>
   <footer class="footer section bg-color--gray">
     <div class="container">
       <p class="text-center">授業主催： N・S高<br>協力：株式会社SCRAP<br>企画制作：N・S高生</p>
